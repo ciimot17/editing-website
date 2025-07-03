@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CIIMOTION STUDIO</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="logo.png">
+
+
+  <style>
+    /* Reset dasar */
+    html, body {
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Preloader tetap full screen dan di tengah */
+    #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: #ff0037;
+      z-index: 9999;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Animasi loading */
+    .lava-lamp {
+      position: relative;
+      width: 120px;
+      height: 120px;
+    }
+    .bubble, .bubble1, .bubble2, .bubble3 {
+      position: absolute;
+      width: 30px;
+      height: 30px;
+      background: #ffffff;
+      border-radius: 50%;
+      animation: float 1.5s ease-in-out infinite;
+    }
+    .bubble1 { left: 30px; animation-delay: 0.2s; }
+    .bubble2 { left: 60px; animation-delay: 0.4s; }
+    .bubble3 { left: 90px; animation-delay: 0.6s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-20px); }
+    }
+
+    /* Konten utama disembunyikan dulu */
+    #content {
+      display: none;
+    }
+  </style>
+</head>
+<body>
+
+
+  <!-- PRELOADER -->
+  <div id="preloader">
+    <div class="lava-lamp">
+      <div class="bubble"></div>
+      <div class="bubble1"></div>
+      <div class="bubble2"></div>
+      <div class="bubble3"></div>
+    </div>
+  </div>
+
+  <!-- KONTEN UTAMA -->
+  <div id="content">
+    <nav>
+      <div class="logo">
+        <img src="logo.png" alt="Logo" style="width: 40px; vertical-align: middle; margin-right: -8px;" />
+        CIIMOTION STUDIO
+        
+      </div>
+      <div class="menu">
+        <a href="jasa.html">Jasa</a>
+        <a href="harga.html">Harga</a>
+        <a href="tentang.html">Tentang</a>
+        <a href="kontak.html">Kontak</a>
+        <a href="profile.html">Profile</a>
+      </div>
+    </nav>
+      </form>
+     <!-- Hero Section -->
+  <section class="hero">
+    <h1> Selamat Datang!</h1>
+    <p>Kami adalah studio editing video kreatif yang menyulap ide kamu jadi visual sinematik yang profesional. Dari konten ringan hingga proyek serius — kami bantu tampil maksimal!</p>
+    <button onclick="window.location.href='#layanan'">Lihat Layanan</button>
+  </section>
+
+  <!-- Tentang -->
+  <section id="tentang">
+    <h2 style="color: #ff0037;">Tentang CIIMOTION STUDIO</h2>
+    <p>CIIMOTION STUDIO didirikan untuk menghadirkan pengalaman editing video yang bukan hanya keren secara visual, tapi juga kuat secara storytelling. Kami melayani editing cinematic, konten kreator, motion graphics, dan video promosi.</p>
+  </section>
+
+  <!-- Layanan -->
+  <section id="layanan">
+    <h2 style="color: #ff0037;">Layanan Unggulan</h2>
+    <div class="fitur">
+      <div class="card">
+        <h3>🎞️ Video Cinematic</h3>
+        <p>Warna filmik, slow motion, dan pacing emosional untuk wedding, vlog, hingga dokumentasi.</p>
+      </div>
+      <div class="card">
+        <h3>🧠 Motion Graphics</h3>
+        <p>Animasi logo, teks bergerak, bumper video, dan efek visual kekinian.</p>
+      </div>
+      <div class="card">
+        <h3>🎥 Konten Kreator</h3>
+        <p>Editing gaya YouTube, TikTok, Reels. Jump cut, meme, caption lucu? Siap!</p>
+      </div>
+      <div class="card">
+        <h3>🚀 Video Promosi</h3>
+        <p>Visual cepat dan to-the-point untuk bisnis, produk, dan personal branding.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 CIIMOTION STUDIO. All rights reserved.
+  </footer>
+
+  <!-- Script untuk transisi -->
+  <script>
+    setTimeout(function () {
+      document.getElementById('preloader').style.display = 'none';
+      document.getElementById('content').style.display = 'block';
+    }, 1000);
+    
+  </script>
+<script>
+  // Fade-in saat scroll
+  document.addEventListener('DOMContentLoaded', function () {
+    const sections = document.querySelectorAll('.animate-fade');
+    const reveal = () => {
+      sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          section.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', reveal);
+    reveal();
+  });
+  </script>  
+</body>
+</html>

@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Profil | CIIMOTION STUDIO</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #111;
+      color: #fff;
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+    }
+
+    .header-flex {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 28px;
+      color: #ff0037;
+    }
+
+    .button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      outline: none;
+    }
+
+    .button-elem {
+      width: 24px;
+      height: 24px;
+      fill: #f0eeef;
+      transform: rotate(180deg);
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+    }
+
+    .profile-img {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      border: 4px solid #ff0037;
+      object-fit: cover;
+      margin-bottom: 20px;
+    }
+
+    .name {
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    .role {
+      font-size: 16px;
+      color: #ff0037;
+      margin-top: 5px;
+    }
+
+    .bio {
+      font-size: 16px;
+      line-height: 1.8;
+      max-width: 700px;
+      margin-top: 20px;
+      color: #ccc;
+    }
+
+    .socials {
+      margin-top: 30px;
+    }
+
+    .socials a {
+      margin: 0 10px;
+      color: #ff0037;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer {
+      margin-top: 60px;
+      text-align: center;
+      padding: 20px;
+      background-color: #0a0a0a;
+      color: #aaa;
+      font-size: 14px;
+    }
+
+    @media (max-width: 600px) {
+      .container {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <div class="header-flex">
+      <button class="button" onclick="history.back()" title="Kembali">
+        <svg viewBox="0 0 46 40" class="button-elem" xmlns="http://www.w3.org/2000/svg">
+          <path d="M46 20.038c0-.7-.3-1.5-.8-2.1l-16-17c-1.1-1-3.2-1.4-4.4-.3-1.2 
+                   1.1-1.2 3.3 0 4.4l11.3 11.9H3c-1.7 0-3 1.3-3 3s1.3 3 
+                   3 3h33.1l-11.3 11.9c-1 1-1.2 3.3 0 4.4 1.2 
+                   1.1 3.3.8 4.4-.3l16-17c.5-.5.8-1.1.8-1.9z"/>
+        </svg>
+      </button>
+      <h1>Profil</h1>
+    </div>
+  </header>
+
+  <!-- Konten Profil -->
+  <div class="container">
+    <img src="pp.jpeg" alt="Foto Profil" class="profile-img" />
+    <div class="name">Rizki Surya Ramadhan</div>
+    <div class="role">Founder & Lead Video Editor</div>
+
+    <p class="bio">
+      Saya adalah pendiri CIIMOTION STUDIO, sekaligus video editor yang berfokus pada hasil sinematik dan storytelling visual.  
+      Sejak 2020, saya telah membantu ratusan klien membuat video yang tidak hanya menarik, tapi juga menyampaikan pesan yang kuat.  
+      <br><br>
+      Dengan pengalaman lebih dari 4 tahun di industri kreatif, saya percaya bahwa setiap frame bisa menjadi cerita.  
+      CIIMOTION STUDIO lahir dari semangat itu — kolaboratif, kreatif, dan konsisten.
+    </p>
+
+    <div class="socials">
+      <p>Temui saya di:</p>
+      <a href="https://instagram.com/ciimotionstudio" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@ciimotionstudio" target="_blank">YouTube</a>
+      <a href="mailto:ciimotionstudio@gmail.com">Email</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 CIIMOTION STUDIO — Profil Tim & Profesional
+  </footer>
+
+</body>
+</html>
